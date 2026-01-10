@@ -84,6 +84,33 @@
   color: var(--accent);
 }
 
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem; /* Adjusted for mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .quad-slide {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .quad-slide > div:not(:first-child) {
+    display: none;
+  }
+
+  .slides > .quad-slide:nth-child(1) > div:first-child {
+    background-image: url('images/workshop12.jpg') !important;
+  }
+  .slides > .quad-slide:nth-child(2) > div:first-child {
+    background-image: url('images/workshop6.JPG') !important;
+  }
+  .slides > .quad-slide:nth-child(3) > div:first-child {
+    background-image: url('images/workshop14.jpg') !important;
+  }
+}
+
 .cta {
       display: inline-block;
       margin-top: 3rem;
